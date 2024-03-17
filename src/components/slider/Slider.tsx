@@ -15,7 +15,7 @@ export const Slider = () => {
       <Pagination>
         <span></span>
         <span></span>
-        <span></span>
+        <span className={"active"}></span>
       </Pagination>
     </StyledSlider>
   );
@@ -33,12 +33,20 @@ const Slide = styled.div`
   text-align: center;
 `
 
-const Pagination = styled.span`
+const Pagination = styled.div`
   span {
     display: inline-block;
     width: 10px;
+    height: 10px;
     margin: 5px;
     background-color: #000000;
-    border-radius: 50%;
+    border-radius: 20px;
+    &+span {
+      max-lines: 5px;
+    }
+    &.active {
+      border-color: red;
+      width: 20px;
+    }
   }
 `

@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from 'styled-components';
 import { myTheme } from './styles/Theme.styles';
+import { GlobalStyle } from './styles/GlobalStyle';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <ThemeProvider theme = {myTheme}>
     <App />
+    <GlobalStyle />
   </ThemeProvider>
 );
 

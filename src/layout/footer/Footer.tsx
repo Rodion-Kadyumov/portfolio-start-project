@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <FlexWrapper direction={"column"} align={"center"}>
-        <StyledSpan>Rodion</StyledSpan>
+        <StyledSpan font={"Josefin Sans, sans serif"} color={"#FFFFFF"}>Rodion</StyledSpan>
         <StyledUnordered>
           <StyledList>
             <StyledLink>
@@ -29,9 +29,17 @@ export const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-  min-height: 20vh;
+  background-color: rgba(31, 31, 32, 0.9);
+  padding: 40px 0;
+  ul {
+    margin: 30px 0;
+  }
 `
 
 const Copyright = styled.small`
-
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0,5;
+  color: #FFFFFF;
 `

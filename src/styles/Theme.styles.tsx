@@ -1,5 +1,7 @@
 export const myTheme = {
+  
   colors: {
-    primary: "#FFFFFF"
+    primary: "#FFFFFF",
+    secondary: "#000000"
   }
 }

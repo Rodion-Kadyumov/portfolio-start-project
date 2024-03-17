@@ -1,8 +1,6 @@
 import styled from "styled-components"
 import { StyledSubTitle } from "../../../styles/StyledSubTitle"
 import { Icon } from "../../../components/icon/Icon"
-import { StyledParagraph } from "../../../styles/StyledParagraph"
-import { StyledSpan } from "../../../styles/StyledSpan"
 import { Slider } from "../../../components/slider/Slider"
 import { FlexWrapper } from "../../../styles/FlexWrapper"
 
@@ -11,7 +9,7 @@ export const Testimony = () => {
     <StyledTestimony>
       <StyledSubTitle>Testimony</StyledSubTitle>
       <FlexWrapper direction={"column"} align={"center"}>
-        <Icon iconId={'text'}/>
+        <Icon iconId={'text'} />
         <Slider />
       </FlexWrapper>
     </StyledTestimony>

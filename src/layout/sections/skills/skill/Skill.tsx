@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
 import { StyledParagraph } from "../../../../styles/StyledParagraph";
+import { FlexWrapper } from "../../../../styles/FlexWrapper";
+import { myTheme } from "../../../../styles/Theme.styles";
+import { StyledSubTitle3 } from "../../../../styles/StyledSubTitle";
 
 type SkillPropsType = {
   iconId: string
@@ -11,16 +14,23 @@ type SkillPropsType = {
 export const Skill = (props:SkillPropsType) => {
   return (
     <StyledSkill>
-        <Icon iconId={props.iconId}/>
-        <StyledSkillTitle>{props.title}</StyledSkillTitle>
+      <FlexWrapper direction={"column"} align={"center"}>
+        <IconWrapper>
+          <Icon iconId={props.iconId}/>
+        </IconWrapper>
+        <StyledSubTitle3>{props.title}</StyledSubTitle3>
         <StyledParagraph>{props.description}</StyledParagraph>
+      </FlexWrapper>
       </StyledSkill>
   );
 }
 
 const StyledSkill = styled.div`
-  width: 30%
+  width: 380px;
+  padding: 62px 20px 40px;
 `
-const StyledSkillTitle = styled.h3`
-  
+
+const IconWrapper = styled.div`
+  /* background-color: ${myTheme.colors.secondary};
+  opacity: 0.5; */
 `
