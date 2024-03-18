@@ -28,8 +28,17 @@ export const SKills = () => {
           <Skill iconId={"git"}
                   title={"GIT"}
                   description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eaque! Necessitatibus natus eum unde ducimus vel ab temporibus dignissimos ipsum corrupti praesentium? Quis fugiat consequuntur dolorum rerum et maxime repellendus."} />
-          <Skill iconId={"vs"}
+          <Skill iconId={"vsCode"}
                   title={"VS Code"}
+                  description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eaque! Necessitatibus natus eum unde ducimus vel ab temporibus dignissimos ipsum corrupti praesentium? Quis fugiat consequuntur dolorum rerum et maxime repellendus."} />
+        <Skill iconId={"js"}
+                  title={"Java Script"}
+                  description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eaque! Necessitatibus natus eum unde ducimus vel ab temporibus dignissimos ipsum corrupti praesentium? Quis fugiat consequuntur dolorum rerum et maxime repellendus."} />
+        <Skill iconId={"ts"}
+                  title={"Type Script"}
+                  description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eaque! Necessitatibus natus eum unde ducimus vel ab temporibus dignissimos ipsum corrupti praesentium? Quis fugiat consequuntur dolorum rerum et maxime repellendus."} />
+        <Skill iconId={"styledComponents"}
+                  title={"Styled Components"}
                   description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eaque! Necessitatibus natus eum unde ducimus vel ab temporibus dignissimos ipsum corrupti praesentium? Quis fugiat consequuntur dolorum rerum et maxime repellendus."} />
         </FlexWrapper>
       </Container>
