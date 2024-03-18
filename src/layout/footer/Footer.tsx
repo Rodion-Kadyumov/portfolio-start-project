@@ -12,12 +12,12 @@ export const Footer = () => {
         <StyledSpan font={"Josefin Sans, sans serif"} color={"#FFFFFF"}>Rodion</StyledSpan>
         <StyledUnordered>
           <StyledList>
-            <StyledLink>
-              <Icon iconId={"telegramm"} />
+            <StyledLink href="https://telegram.me/@TempusPraeceps">
+              <Icon iconId={"telegramm"} width="50" />
             </StyledLink>
           </StyledList>
           <StyledList>
-            <StyledLink>
+            <StyledLink href="https://vk.com/antaresr">
               <Icon iconId={"vk"} />
             </StyledLink>
           </StyledList>
