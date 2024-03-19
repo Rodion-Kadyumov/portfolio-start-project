@@ -18,7 +18,7 @@ export const StyledBtn = styled.button<ButtonPropsType>`
   
   &:hover {
     box-shadow: 0 0 20px #00CED1, 0 0 40px #00CED1, 0 0 80px #00CED1;
-      color: #000000;
-      background-color: #FFFFFF
+    color: #000000;
+    background-color: #FFFFFF
   }
 `

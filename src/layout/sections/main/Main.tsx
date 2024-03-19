@@ -19,13 +19,14 @@ export const Main = () => {
           <StyledTitle>A Web Developer.</StyledTitle>
         </div>
         <PhotoWrapper>
-          <Photo src={photo} alt="Фото"/>
+          <div>
+            <Photo src={photo} alt="Фото"/>
+          </div>
         </PhotoWrapper>
       </FlexWrapper>
     </Container>
   </StyledMain>
   )
-  
 }
 
 const StyledMain = styled.section`
@@ -33,19 +34,26 @@ const StyledMain = styled.section`
 `
 const PhotoWrapper = styled.div`
   position: relative;
+  div {
+    width:360px;
+    height: 450px;
+    overflow: hidden;
+  }
   &::before {
     content: "";
     width: 360px;
     height: 470px;
     border: 5px solid ${myTheme.colors.secondary};
     position: absolute;
-    top: 95px;
-    left: 120px;
+    top: -10px;
+    left: 20px;
     z-index: -1;
   }
 `
 
 const Photo = styled.img`
+  position: relative;
   object-fit: cover;
-  overflow: hidden;
+  top: -100px;
+  left: -130px;
 `

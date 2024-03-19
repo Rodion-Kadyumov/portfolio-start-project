@@ -18,9 +18,11 @@ export const Work = (props: WorkPropsType) => {
       </ImageWrapper>
       <Description>
         <StyledSubTitle3 transform={"none"}>{props.title}</StyledSubTitle3>
-        <StyledParagraph>{props.text}</StyledParagraph>
-        <StyledLink href={"#"}>demo</StyledLink>
-        <StyledLink href={"#"}>code</StyledLink>
+        <StyledParagraph margin="0 0 30px 0">{props.text}</StyledParagraph>
+        <div>
+          <StyledLink href={"#"}>demo</StyledLink>
+          <StyledLink href={"#"}>code</StyledLink>
+        </div>
       </Description>
     </Styledwork>
   );
@@ -29,6 +31,10 @@ export const Work = (props: WorkPropsType) => {
 const Styledwork = styled.div`
   max-width: 540px;
   width: 100%;
+
+  ${StyledLink} {
+    color: black;
+  }
 `
 const ImageWrapper = styled.div`
   position: relative;
@@ -66,4 +72,17 @@ const Image = styled.img`
 
 const Description = styled.div`
   padding: 25px 20px;
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  ${StyledLink}:hover {
+    box-sizing: borser-box;
+    border: 1px solid #f00d0d;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: #f00d0d;
+    box-shadow: 0 0 20px #f00d0d, 0 0 40px #f00d0d, 0 0 80px #f00d0d;
+  }
 `

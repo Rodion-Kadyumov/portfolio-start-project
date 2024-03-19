@@ -10,7 +10,4 @@ export const StyledLink = styled.a<LinkPropsType>`
   cursor: pointer;
   display: flex;
   color: ${myTheme.colors.primary};
-  &:hover {
-    color: #f00d0d;
-  }
 `

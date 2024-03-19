@@ -27,10 +27,9 @@ export const Skill = (props:SkillPropsType) => {
 
 const StyledSkill = styled.div`
   width: 380px;
-  padding: 62px 20px 40px;
+  padding: 20px 20px 40px;
 `
 
 const IconWrapper = styled.div`
-  /* background-color: ${myTheme.colors.secondary};
-  opacity: 0.5; */
+
 `
