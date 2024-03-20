@@ -6,6 +6,8 @@ import photo from "../../../assets/images/me.jpeg"
 import { FlexWrapper } from "../../../styles/FlexWrapper";
 import { Container } from "../../../styles/Container";
 import { myTheme } from "../../../styles/Theme.styles";
+import Typewriter from 'typewriter-effect';
+
 
 
 export const Main = () => {
@@ -16,7 +18,15 @@ export const Main = () => {
         <div>
           <StyledSpan>Hi There</StyledSpan>
           <StyledParagraph weight={"700"} size={"50px"}>I am <span>Rodion Kaduymov</span></StyledParagraph>
-          <StyledTitle>A Web Developer.</StyledTitle>
+          <StyledTitle>
+            <Typewriter
+              options={{
+                strings: ["A Web Developer."],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </StyledTitle>
         </div>
         <PhotoWrapper>
           <div>
