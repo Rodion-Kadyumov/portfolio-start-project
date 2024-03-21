@@ -12,11 +12,6 @@ export const Slider = () => {
           <StyledSpan>krrkes@gmail.com</StyledSpan>
         </Slide>
       </FlexWrapper>
-      <Pagination>
-        <span></span>
-        <span></span>
-        <span className={"active"}></span>
-      </Pagination>
     </StyledSlider>
   );
 }
@@ -27,26 +22,9 @@ const StyledSlider = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 20px;
 `
 
 const Slide = styled.div`
   text-align: center;
-`
-
-const Pagination = styled.div`
-  span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #000000;
-    border-radius: 20px;
-    &+span {
-      max-lines: 5px;
-    }
-    &.active {
-      border-color: red;
-      width: 20px;
-    }
-  }
 `

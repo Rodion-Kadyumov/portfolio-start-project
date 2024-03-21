@@ -19,7 +19,6 @@ export const Contact = () => {
       </Container>
     </StyledContact>
   )
-  
 }
 
 const StyledContact = styled.section`
